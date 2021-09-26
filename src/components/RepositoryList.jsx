@@ -1,3 +1,10 @@
+import { RepositoryItem } from "./RepositoryItem";
+
+const repository = {
+    name: "Unform",
+    description: "Forms in React",
+    link: "https://github.com/XandRules"
+}
 
 export function RepositoryList(){
     return (
@@ -5,21 +12,11 @@ export function RepositoryList(){
             <h1>Lista de repositórios</h1>
             
             <ul>
-                <li>
-                    <strong>Título</strong>
-                    <p>Descrição do repositório</p>
-                    <a href="">Link para o repositório</a>
-                </li>
-                <li>
-                    <strong>Título</strong>
-                    <p>Descrição do repositório</p>
-                    <a href="">Link para o repositório</a>
-                </li>
-                <li>
-                    <strong>Título</strong>
-                    <p>Descrição do repositório</p>
-                    <a href="">Link para o repositório</a>
-                </li>
+              <RepositoryItem repository={repository}/> 
+              <RepositoryItem repository={repository}/> 
+              <RepositoryItem repository={repository}/> 
+              <RepositoryItem repository={repository}/> 
+              
             </ul>
             
         </section>
